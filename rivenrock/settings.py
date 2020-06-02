@@ -159,5 +159,6 @@ WIKI_ACCOUNT_SIGNUP_ALLOWED = True
 # Deployment
 
 if DEPLOY == 'prod':
+    DEBUG = False
     import django_heroku
     django_heroku.settings(locals())
