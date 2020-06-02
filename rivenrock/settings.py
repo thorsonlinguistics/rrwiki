@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('RRWIKI_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-DEPLOY = 'local'
+DEPLOY = os.environ.get('DEPLOY', 'test')
 
 ALLOWED_HOSTS = []
 
