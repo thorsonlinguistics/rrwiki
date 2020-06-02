@@ -160,6 +160,6 @@ WIKI_ACCOUNT_SIGNUP_ALLOWED = True
 
 if DEPLOY == 'prod':
     ALLOWED_HOSTS = ['rrwiki.herokuapp.com']
-    DEBUG = True
+    DEBUG = False
     import django_heroku
     django_heroku.settings(locals())
