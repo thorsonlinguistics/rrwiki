@@ -177,6 +177,7 @@ if DEPLOY == 'prod':
         'CacheControl': 'max-age=864000',
     }
     AWS_LOCATION = 'static'
+    AWS_DEFAULT_ACL = None
 
     STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
 
