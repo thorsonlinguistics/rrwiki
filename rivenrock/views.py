@@ -65,6 +65,10 @@ class Sign:
 
         return self.sign
 
+    def get_filename(self):
+
+        return "rivenrock/img/%s.png" % self.sign
+
     def get_angle_on_day(self, total_days):
         """
         Gets the angle (in degrees) of the sign on a particular day since the

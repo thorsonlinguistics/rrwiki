@@ -5,7 +5,8 @@ class ZodiacForm(forms.Form):
 
     time = forms.TimeField(label=_("Time"))
 
-    day = forms.IntegerField(label=_("Day"), min_value=1, max_value=30)
+    day = forms.IntegerField(label=_("Day"), min_value=1, max_value=30,
+            initial=1)
 
     month = forms.ChoiceField(label=_("Month"), 
         choices=(
