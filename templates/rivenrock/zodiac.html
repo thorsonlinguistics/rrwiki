@@ -1,0 +1,123 @@
+{% extends "wiki/base_site.html" %}
+
+{% load i18n sekizai_tags static widget_tweaks %}
+
+{% block wiki_site_title %}{% trans "The Rivenrock Wiki" %}{% endblock %}
+
+
+{% block wiki_header_branding %}
+<a class="navbar-brand" href="/">
+  {% trans "Rivenrock" %}
+</a>
+{% endblock %}
+
+{% block wiki_header_navlinks %}
+<ul class="navbar-nav mr-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="/">{% trans "Home" %}</a>
+  </li>
+</ul>
+{% endblock %}
+
+{% block wiki_contents %}
+
+{% addtoblock "css" %}
+<link href="{% static "rivenrock/css/zodiac.css" %}" rel="stylesheet">
+{% endaddtoblock %}
+
+<h1>{% trans "Rivenrock Zodiac Calculator" %}</h1>
+
+<form action="{% url 'zodiac' %}" method="post">
+  {% csrf_token %}
+  <div class="form-row">
+    {% for field in form %}
+      <div class="form-group col">
+        {{ field.label_tag }}
+        {% render_field field class+="form-control" %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <button class="btn btn-primary" type="submit">{% trans "Submit" %}</button>
+</form>
+
+{% if signs %}
+  <h2>{% trans "You have the following Zodiac Signs:" %}</h2>
+  <ul>
+    {% for sign in signs %}
+      <li>{{ sign }}</li>
+    {% endfor %}
+  </ul>
+{% elif drawing %}
+  <h2>{% trans "You have no Zodiac Signs. Better luck next life." %}</h2>
+{% endif %}
+
+{% if drawing %}
+  <div class="drawing-container">
+    {{ drawing|safe }}
+  </div>
+{% endif %}
+
+<div class="wiki-article">
+  <p>
+  {% blocktrans %}
+  The Rivenrock Zodiac is determined by the celestial bodies that appear in the
+  sky at the time of an individual's birth. Each of these celestial bodies is
+  associated with a type of animal spirit and an element. In different
+  cultures, these animal spirits are also associated with personality traits or
+  life events. 
+  {% endblocktrans %}
+  </p>
+
+  <div class="table-responsive">
+    <table>
+      <caption>{% trans "The Satellites of Rivenrock" %}</caption>
+      <thead>
+        <tr>
+          <th>{% trans "Celestial Body" %}</th>
+          <th>{% trans "Animal Spirit" %}</th>
+          <th>{% trans "Element" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{% trans "Járnviðr" %}</td>
+          <td>{% trans "Wolf" %}</td>
+          <td>{% trans "Earth" %}</td>
+        </tr>
+        <tr>
+          <td>{% trans "Hlér" %}</td>
+          <td>{% trans "Bear" %}</td>
+          <td>{% trans "Water" %}</td>
+        </tr>
+        <tr>
+          <td>{% trans "Urd" %}</td>
+          <td>{% trans "Spider" %}</td>
+          <td>{% trans "Iron" %}</td>
+        </tr>
+        <tr>
+          <td>{% trans "Helheim" %}</td>
+          <td>{% trans "Cat" %}</td>
+          <td>{% trans "Knowledge" %}</td>
+        </tr>
+        <tr>
+          <td>{% trans "Lidskjalf" %}</td>
+          <td>{% trans "Raven" %}</td>
+          <td>{% trans "Rust" %}</td>
+        </tr>
+        <tr>
+          <td>{% trans "Muspelheim" %}</td>
+          <td>{% trans "Ape" %}</td>
+          <td>{% trans "Fire" %}</td>
+        </tr>
+        <tr>
+          <td>{% trans "Niflheim" %}</td>
+          <td>{% trans "Serpent" %}</td>
+          <td>{% trans "Air" %}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

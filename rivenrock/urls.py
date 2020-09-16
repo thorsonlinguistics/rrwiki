@@ -17,11 +17,14 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
+from rivenrock import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('notifications/', include('django_nyt.urls')),
-    path('wiki/', include('wiki.urls'))
+    path('wiki/', include('wiki.urls')),
+    path('zodiac/', views.ZodiacView.as_view(), name='zodiac'),
+    path('', views.RootView.as_view(), name='home'),
 ]
 
 if settings.DEBUG:
