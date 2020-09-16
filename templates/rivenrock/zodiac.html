@@ -45,7 +45,7 @@
   <h2>{% trans "You have the following Zodiac Signs:" %}</h2>
   <ul>
     {% for sign in signs %}
-      <li>{{ sign }}</li>
+      <li>{{ sign|title }}</li>
     {% endfor %}
   </ul>
 {% elif drawing %}
