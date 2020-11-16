@@ -25,4 +25,4 @@ class ZodiacForm(forms.Form):
         )
     )
 
-    year = forms.IntegerField(label=_("Year"), initial=1100)
+    year = forms.IntegerField(label=_("Year"), initial=1181)
