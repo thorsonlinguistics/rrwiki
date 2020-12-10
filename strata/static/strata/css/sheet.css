@@ -1,0 +1,19 @@
+.crafts-list input {
+  width: 4em;
+}
+
+.roll-skill {
+  cursor: pointer;
+}
+
+.roll-skill:hover {
+  font-weight: bold;
+}
+
+.roll-container {
+  display: none;
+}
+
+.level-up {
+  font-weight: bold;
+}

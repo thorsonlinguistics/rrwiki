@@ -1,0 +1,187 @@
+Musclecraft
+├── Meleecraft
+│   ├── Thrustcraft
+│   ├── Slashcraft
+│   ├── Bashcraft
+│   ├── Brawlcraft
+│   ├── Parrycraft
+│   ├── Disarmcraft
+│   ├── Tripcraft
+│   ├── Sundercraft
+│   └── Dualcraft
+├── Rangedcraft
+│   ├── Throwcraft
+│   ├── Archerycraft
+│   └── Guncraft
+├── Siegecraft
+│   ├── Ramcraft
+│   └── Artillerycraft
+├── Armorcraft
+│   ├── Padcraft
+│   ├── Deflectcraft
+│   └── Shieldcraft
+├── Movecraft
+│   ├── Dodgecraft
+│   ├── Speedcraft
+│   ├── Jumpcraft
+│   ├── Wrigglecraft
+│   ├── Dartcraft
+│   ├── Ridecraft
+│   ├── Catchcraft
+│   ├── Balancecraft
+│   └── Tumblecraft
+├── Stealthcraft
+│   ├── Hidecraft
+│   ├── Silentcraft
+│   └── Palmcraft
+├── Manualcraft
+│   ├── Ropecraft
+│   └── Jimmycraft
+└── Powercraft
+    ├── Shovecraft
+    ├── Grapplecraft
+    ├── Liftcraft
+    ├── Digcraft
+    └── Pullcraft
+Endurancecraft
+├── Cardiocraft
+│   ├── Runcraft
+│   ├── Swimcraft
+│   ├── Breathcraft
+│   ├── Marchcraft
+│   └── Climbcraft
+├── Toughcraft
+│   ├── Hardycraft
+│   ├── Recovercraft
+│   ├── Clotcraft
+│   ├── Detoxcraft
+│   ├── Immunecraft
+│   ├── Warmcraft
+│   ├── Coolcraft
+│   ├── Wardcraft
+│   ├── Drugcraft
+│   └── Youthcraft
+├── Staunchcraft
+│   ├── Gripcraft
+│   ├── Haulcraft
+│   ├── Stillcraft
+│   └── Sleepcraft
+├── Sufferancecraft
+│   ├── Concentratecraft
+│   ├── Patiencecraft
+│   ├── Stresscraft
+│   ├── Ignorecraft
+│   ├── Stubborncraft
+│   └── Assurancecraft
+├── Survivalcraft
+│   ├── Dietcraft
+│   └── Quenchcraft
+└── Attitudecraft
+    ├── Ragecraft
+    ├── Joycraft
+    └── Laughcraft
+Mindcraft
+├── Spellcraft
+│   ├── Illusioncraft
+│   ├── Evocationcraft
+│   ├── Enchantcraft
+│   ├── Charmcraft
+│   ├── Necrocraft
+│   ├── Augurycraft
+│   ├── Lithomancycraft
+│   └── Dispellcraft
+├── Culturecraft
+│   ├── Languagecraft
+│   ├── Ritualcraft
+│   ├── Faithcraft
+│   ├── Fashioncraft
+│   ├── Moralcraft
+│   ├── Historycraft
+│   ├── Religioncraft
+│   ├── Politicscraft
+│   └── Localcraft
+├── Sciencecraft
+│   ├── Physicscraft
+│   ├── Chemistrycraft
+│   ├── Biocraft
+│   ├── Geocraft
+│   ├── Mathcraft
+│   ├── Astrocraft
+│   └── Medicinecraft
+├── Valuecraft
+│   ├── Appraisecraft
+│   ├── Purposecraft
+│   ├── Moralcraft
+│   ├── Plancraft
+│   ├── Financecraft
+│   └── Evaluationcraft
+├── Thoughtcraft
+│   ├── Philosophycraft
+│   ├── Gamecraft
+│   └── Strategycraft
+└── Hyliccraft
+    ├── Smeltcraft
+    ├── Alchemycraft
+    ├── Papercraft
+    ├── Masoncraft
+    ├── Forgecraft
+    ├── Leathercraft
+    ├── Minecraft
+    ├── Machinecraft
+    ├── Carpentrycraft
+    └── Glasscraft
+Soulcraft
+├── Artcraft
+│   ├── Jewelcraft
+│   ├── Textilecraft
+│   ├── Sculpturecraft
+│   ├── Storycraft
+│   ├── Musiccraft
+│   ├── Imagecraft
+│   └── Calligraphycraft
+├── Speechcraft
+│   ├── Inveiglecraft
+│   ├── Deceptioncraft
+│   ├── Lungcraft
+│   ├── Wordcraft
+│   ├── Incitecraft
+│   ├── Intimidationcraft
+│   ├── Logiccraft
+│   └── Inspirecraft
+├── Emotioncraft
+│   ├── Grumpcraft
+│   ├── Happycraft
+│   ├── Sleepycraft
+│   └── Bashfulcraft
+├── Behavecraft
+│   ├── Sneezecraft
+│   ├── Dopecraft
+│   ├── Oathcraft
+│   └── Actcraft
+├── Helpcraft
+│   ├── Doccraft
+│   └── Coordinatecraft
+├── Heartcraft
+│   ├── Reactcraft
+│   ├── Confidencecraft
+│   ├── Lovecraft
+│   ├── Empathycraft
+│   ├── Leadcraft
+│   └── Intuitioncraft
+├── Vitalcraft
+│   ├── Brewcraft
+│   └── Cookcraft
+├── Worldcraft
+│   ├── Learncraft
+│   ├── Teachcraft
+│   ├── Tacticcraft
+│   ├── Wildcraft
+│   ├── Navigationcraft
+│   └── Beastcraft
+└── Perceivecraft
+    ├── Seecraft
+    ├── Hearcraft
+    ├── Touchcraft
+    ├── Smellcraft
+    ├── Tastecraft
+    └── Searchcraft

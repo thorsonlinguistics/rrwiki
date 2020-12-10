@@ -1,0 +1,41 @@
+{% extends "wiki/base_site.html" %}
+
+{% load i18n sekizai_tags static widget_tweaks %}
+
+{% block wiki_site_title %}{% trans "Legends and Layers" %}{% endblock %}
+
+{% block wiki_header_branding %}
+<a class="navbar-brand" href="/">
+  {% trans "Legends and Layers" %}
+</a>
+{% endblock %}
+
+{% block wiki_header_navlinks %}
+<ul class="navbar-nav mr-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="/">{% trans "Home" %}</a>
+  </li>
+</ul>
+{% endblock %}
+
+{% block wiki_contents %}
+
+{% addtoblock "css" %}
+{% endaddtoblock %}
+
+{% addtoblock "js" %}
+{% endaddtoblock %}
+
+<h1>{% trans "Characters" %}</h1>
+
+<a class="btn btn-primary" href="{% url 'strata:create' %}">
+  {% trans "Create Character" %}
+</a>
+
+<ul>
+  {% for object in object_list %}
+    <li><a href="{{ object.get_absolute_url }}">{{ object }}</a></li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
