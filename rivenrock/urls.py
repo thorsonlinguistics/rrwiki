@@ -24,6 +24,7 @@ urlpatterns = [
     path('notifications/', include('django_nyt.urls')),
     path('wiki/', include('wiki.urls')),
     path('zodiac/', views.ZodiacView.as_view(), name='zodiac'),
+    path('strata/', include('strata.urls')),
     path('', views.RootView.as_view(), name='home'),
 ]
 

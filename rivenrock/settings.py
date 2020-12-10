@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'widget_tweaks',
+    'strata',
 ]
 
 MIDDLEWARE = [
@@ -162,7 +163,6 @@ SITE_ID = 1
 WIKI_ACCOUNT_HANDLING = True
 WIKI_ACCOUNT_SIGNUP_ALLOWED = True
 
-
 # Deployment
 
 if DEPLOY == 'prod':
@@ -187,3 +187,229 @@ if DEPLOY == 'prod':
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
     DEFAULT_FILE_STORAGE = 'rivenrock.storage_backends.MediaStorage'
+
+# Legends and Layers
+
+CRAFTS = (
+    ('Muscle', (
+        ('Melee', (
+            ('Thrust', ()),
+            ('Slash', ()),
+            ('Bash', ()),
+            ('Brawl', ()),
+            ('Parry', ()),
+            ('Disarm', ()),
+            ('Trip', ()),
+            ('Sunder', ()),
+            ('Disarm', ()),
+            ('Dual', ()),
+        )),
+        ('Ranged', (
+            ('Throw', ()),
+            ('Archery', ()),
+            ('Gun', ()),
+        )),
+        ('Siege', (
+            ('Ram', ()),
+            ('Artillery', ()),
+        )),
+        ('Armor', (
+            ('Pad', ()),
+            ('Deflect', ()),
+            ('Shield', ()),
+        )),
+        ('Move', (
+            ('Dodge', ()),
+            ('Speed', ()),
+            ('Jump', ()),
+            ('Wriggle', ()),
+            ('Dart', ()),
+            ('Ride', ()),
+            ('Catch', ()),
+            ('Balance', ()),
+            ('Tumble', ()),
+        )),
+        ('Stealth', (
+            ('Hide', ()),
+            ('Silent', ()),
+            ('Palm', ()),
+        )),
+        ('Manual', (
+            ('Rope', ()),
+            ('Jimmy', ()),
+        )),
+        ('Power', (
+            ('Shove', ()),
+            ('Grapple', ()),
+            ('Lift', ()),
+            ('Dig', ()),
+            ('Pull', ()),
+        )),
+    )),
+    ('Endurance', (
+        ('Cardio', (
+            ('Run', ()),
+            ('Swim', ()),
+            ('Breath', ()),
+            ('March', ()),
+            ('Climb', ()),
+        )),
+        ('Tough', (
+            ('Hardy', ()),
+            ('Recover', ()),
+            ('Clot', ()),
+            ('Detox', ()),
+            ('Immune', ()),
+            ('Warm', ()),
+            ('Cool', ()),
+            ('Ward', ()),
+            ('Drug', ()),
+            ('Youth', ()),
+        )),
+        ('Staunch', (
+            ('Grip', ()),
+            ('Haul', ()),
+            ('Still', ()),
+            ('Sleep', ()),
+        )),
+        ('Sufferance', (
+            ('Concentrate', ()),
+            ('Patience', ()),
+            ('Stress', ()),
+            ('Ignore', ()),
+            ('Stubborn', ()),
+            ('Assurance', ()),
+        )),
+        ('Survival', (
+            ('Diet', ()),
+            ('Quench', ()),
+        )),
+        ('Attitude', (
+            ('Rage', ()),
+            ('Joy', ()),
+            ('Laugh', ()),
+        )),
+    )),
+    ('Mind', (
+        ('Spell', (
+            ('Illusion', ()),
+            ('Evocation', ()),
+            ('Enchant', ()),
+            ('Charm', ()),
+            ('Necro', ()),
+            ('Augury', ()),
+            ('Lithomancy', ()),
+            ('Dispell', ()),
+        )),
+        ('Culture', (
+            ('Language', ()),
+            ('Ritual', ()),
+            ('Faith', ()),
+            ('Fashion', ()),
+            ('Moral', ()),
+            ('History', ()),
+            ('Religion', ()),
+            ('Politics', ()),
+            ('Local', ()),
+        )),
+        ('Science', (
+            ('Physics', ()),
+            ('Chemistry', ()),
+            ('Bio', ()),
+            ('Geo', ()),
+            ('Math', ()),
+            ('Astro', ()),
+            ('Medicine', ()),
+        )),
+        ('Value', (
+            ('Appraise', ()),
+            ('Purpose', ()),
+            ('Righteous', ()),
+            ('Plan', ()),
+            ('Finance', ()),
+            ('Evaluation', ()),
+        )),
+        ('Thought', (
+            ('Philosophy', ()),
+            ('Game', ()),
+            ('Strategy', ()),
+        )),
+        ('Hylic', (
+            ('Smelt', ()),
+            ('Alchemy', ()),
+            ('Paper', ()),
+            ('Mason', ()),
+            ('Forge', ()),
+            ('Leather', ()),
+            ('Mine', ()),
+            ('Machine', ()),
+            ('Carpentry', ()),
+            ('Glass', ()),
+        )),
+    )),
+    ('Soul', (
+        ('Art', (
+            ('Jewel', ()),
+            ('Textile', ()),
+            ('Sculpture', ()),
+            ('Story', ()),
+            ('Music', ()),
+            ('Image', ()),
+            ('Calligraphy', ()),
+        )),
+        ('Speech', (
+            ('Inveigle', ()),
+            ('Deception', ()),
+            ('Lung', ()),
+            ('Word', ()),
+            ('Incite', ()),
+            ('Intimidation', ()),
+            ('Logic', ()),
+            ('Inspire', ()),
+        )),
+        ('Emotion', (
+            ('Grump', ()),
+            ('Happy', ()),
+            ('Sleepy', ()),
+            ('Bashful', ()),
+        )),
+        ('Behave', (
+            ('Sneeze', ()),
+            ('Dope', ()),
+            ('Oath', ()),
+            ('Act', ()),
+        )),
+        ('Help', (
+            ('Doc', ()),
+            ('Coordinate', ()),
+        )),
+        ('Heart', (
+            ('React', ()),
+            ('Confidence', ()),
+            ('Love', ()),
+            ('Empathy', ()),
+            ('Lead', ()),
+            ('Intution', ()),
+        )),
+        ('Vital', (
+            ('Brew', ()),
+            ('Cook', ()),
+        )),
+        ('World', (
+            ('Learn', ()),
+            ('Teach', ()),
+            ('Tactic', ()),
+            ('Wild', ()),
+            ('Navigation', ()),
+            ('Beast', ()),
+        )),
+        ('Perceive', (
+            ('See', ()),
+            ('Hear', ()),
+            ('Touch', ()),
+            ('Smell', ()),
+            ('Taste', ()),
+            ('Search', ()),
+        )),
+    )),
+)
